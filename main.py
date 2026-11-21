@@ -10,6 +10,9 @@ import hashlib
 import os
 import sys
 
+# Deterministic by construction: the joke is a fixed string constant.
+# No clock, randomness, network, or environment input feeds the
+# output, so every run writes exactly the same bytes.
 JOKE = (
     "The demo crashed on stage, and my agent said, "
     "'Don't panic \u2014 I already blamed you in the commit message.'"
